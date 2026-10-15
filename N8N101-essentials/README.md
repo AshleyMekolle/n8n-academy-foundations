@@ -24,9 +24,9 @@ First course of the n8n Foundations program: the n8n interface, triggers, creden
 
 **Nodes used:** Manual Trigger, HTTP Request (header auth, query parameters), Sticky Note for documentation
 
-![Academy Registration workflow](screenshots/01-academy-registration.png)
+![Academy Registration workflow](screenshots/Section-1-Academy-Registration.png)
 
-**Workflow file:** [01-academy-registration.json](workflows/01-academy-registration.json)
+**Workflow file:** [01-academy-registration.json](workflows/Section-1-Academy-Registration.json)
 
 ### 2. Sales Data Pipeline
 
@@ -42,9 +42,9 @@ First course of the n8n Foundations program: the n8n interface, triggers, creden
 
 **Nodes used:** Manual Trigger, HTTP Request (GET and POST, JSON and binary bodies), Split Out, Edit Fields (Set), IF, No Operation, Summarize, Rename Keys, Aggregate, Convert to File, Sticky Note
 
-![Sales Data Pipeline workflow](screenshots/02-sales-data-pipeline.png)
+![Sales Data Pipeline workflow](screenshots/Section-2-Sales-Data-Pipeline.png)
 
-**Workflow file:** [02-sales-data-pipeline.json](workflows/02-sales-data-pipeline.json)
+**Workflow file:** [02-sales-data-pipeline.json](workflows/Section-2-Sales-Data-Pipeline.json)
 
 ## Running these workflows
 
