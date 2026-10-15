@@ -1,0 +1,106 @@
+{
+  "name": "Section 2 - Order Report",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "f3243086-17a3-442d-a733-fdb8215c157b",
+      "name": "TriggerManual"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "STUy6gd4reAl815L",
+          "mode": "list",
+          "cachedResultName": "n8n102_course_orders",
+          "cachedResultUrl": "/projects/58OCYX8r9y4I0Yz5/datatables/STUy6gd4reAl815L"
+        },
+        "returnAll": true
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        224,
+        0
+      ],
+      "id": "b78aec6d-4718-4bbc-ba57-3881ec735ae6",
+      "name": "GetAllOrders"
+    },
+    {
+      "parameters": {
+        "fieldsToSummarize": {
+          "values": [
+            {
+              "aggregation": "sum",
+              "field": "total"
+            },
+            {
+              "field": "order_id"
+            }
+          ]
+        },
+        "fieldsToSplitBy": "status",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.summarize",
+      "typeVersion": 1.1,
+      "position": [
+        448,
+        0
+      ],
+      "id": "a9a10471-b94e-45ed-80d6-b808dffa8e89",
+      "name": "SummarizeByStatus"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "TriggerManual": {
+      "main": [
+        [
+          {
+            "node": "GetAllOrders",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GetAllOrders": {
+      "main": [
+        [
+          {
+            "node": "SummarizeByStatus",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "550900fb-4113-4172-9161-69e415b74c5a",
+  "meta": {
+    "instanceId": "a9a2bd3d3e3c166f28572eb49d334b513ddca5ffff6c29f32687a2b58f08ce95"
+  },
+  "nodeGroups": [],
+  "id": "8gVUv5K7UzZx4wGV",
+  "tags": [
+    {
+      "updatedAt": "2026-10-09T16:24:02.010Z",
+      "createdAt": "2026-10-09T16:24:02.010Z",
+      "id": "KZZnXkA7L4djW51i",
+      "name": "n8n102"
+    }
+  ]
+}
