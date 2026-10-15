@@ -33,7 +33,7 @@ Third course of the n8n Foundations program: AI-powered workflows, debugging, er
 
 **Nodes used:** Manual Trigger, HTTP Request, Limit, Basic LLM Chain (x2), Groq Chat Model (x2), Structured Output Parser, Edit Fields (Set)
 
-![AI Feedback Pipeline](screenshots/01-feedback-pipeline.png)
+![AI Feedback Pipeline](screenshots/Section-1-Feedback-Agent-Executed-workflow.png)
 
 **Workflow file:** [01-feedback-pipeline.json](workflows/01-feedback-pipeline.json)
 
@@ -53,7 +53,7 @@ Each parameter is filled at runtime with `$fromAI()`, so the model extracts the 
 
 **Nodes used:** Chat Trigger, AI Agent, Groq Chat Model, HTTP Request Tool (x3)
 
-![Customer Service AI Agent](screenshots/02-customer-service-agent.png)
+![Customer Service AI Agent](screenshots/Section-1-Feedback-Pipeline.png)
 
 **Workflow file:** [02-customer-service-agent.json](workflows/02-customer-service-agent.json)
 
@@ -69,7 +69,7 @@ Three workflows that show retries, failure handling and centralized error report
 
 **Nodes used:** Manual Trigger, HTTP Request (retry on fail)
 
-![Debugging Practice](screenshots/03-debugging-practice.png)
+![Debugging Practice](screenshots/Section-2-Debugging-Practice.png)
 
 **Workflow file:** [03-debugging-practice.json](workflows/03-debugging-practice.json)
 
@@ -81,7 +81,7 @@ Three workflows that show retries, failure handling and centralized error report
 
 **Nodes used:** Webhook (header auth), HTTP Request
 
-![Failure Test](screenshots/04-failure-test.png)
+![Failure Test](screenshots/Section-2-Failure-Test.png)
 
 **Workflow file:** [04-failure-test.json](workflows/04-failure-test.json)
 
@@ -93,7 +93,7 @@ Three workflows that show retries, failure handling and centralized error report
 
 **Nodes used:** Error Trigger, HTTP Request, Edit Fields (Set), No Operation
 
-![Error Handler](screenshots/05-error-handler.png)
+![Error Handler](screenshots/Section-2-Error-Handler-(Error-Workflow).png)
 
 **Workflow file:** [05-error-handler.json](workflows/05-error-handler.json)
 
@@ -111,7 +111,7 @@ The repaired workflow also keeps retry on fail for both API calls, and it has a 
 
 **Nodes used:** Manual Trigger, HTTP Request (x3), Merge, Edit Fields (Set)
 
-![Fixed Broken Workflow](screenshots/06-fixed-broken-workflow.png)
+![Fixed Broken Workflow](screenshots/Broken-Workflow.png)
 
 **Workflow file:** [06-fixed-broken-workflow.json](workflows/06-fixed-broken-workflow.json)
 
