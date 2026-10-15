@@ -1,0 +1,112 @@
+{
+  "name": "Section 2 - Failure Test",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "course/n8n103/failure-test",
+        "authentication": "headerAuth",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "a1831154-8fe1-4bf7-a925-396103525fe5",
+      "name": "TriggerWebhook",
+      "webhookId": "c5f08d77-8ccc-4c6e-b358-f7365a53d576",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "22hpUjWwK9VFjw8m",
+          "name": "n8n Academy API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://learn.app.n8n.cloud/webhook/course/n8n103/guaranteed-failure",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-Assessment-ID",
+              "value": "YOUR_ASSESSMENT_ID"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        224,
+        0
+      ],
+      "id": "1fe8f48e-7438-4f95-8324-11c76d1c04fb",
+      "name": "CallFailingEndpoint",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "22hpUjWwK9VFjw8m",
+          "name": "n8n Academy API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "# Section 2 - Failure Test\n\nOwned By: Mekolle Ashley\nLast Updated: 13th Oct 2026\n\nWebhook workflow that intentionally fails to test error workflow\ntriggering. Called by the main Debugging Practice workflow.\n\n## Endpoint\n- GET /webhook/course/n8n103/failure-test\n- Authentication: Header Auth (n8n Academy API Key)\n\n## Flow\n1. TriggerWebhook: Receives request and responds immediately\n2. CallFailingEndpoint: Calls guaranteed-failure endpoint and throws\n3. Execution ends in an unhandled error\n4. Linked Error Workflow (Section 2 - Error Handler) runs\n\n## Error Configuration\n- CallFailingEndpoint left on default On Error (Stop Workflow)\n- Error Workflow linked to Section 2 - Error Handler\n\n## Requirements\n- Must be published for production execution\n- Must have Error Workflow configured in settings\n\nPart of: n8n Foundations Program, N8N103 Course, Section 2",
+        "height": 608,
+        "width": 464,
+        "color": "#C18BBA"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -528,
+        -160
+      ],
+      "id": "8e011613-466b-4db7-962b-165dc8c1d37a",
+      "name": "Sticky Note"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "TriggerWebhook": {
+      "main": [
+        [
+          {
+            "node": "CallFailingEndpoint",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "timeSavedMode": "fixed",
+    "errorWorkflow": "bOimm6MaeYBI4tVC",
+    "callerPolicy": "workflowsFromSameOwner",
+    "availableInMCP": false
+  },
+  "versionId": "99bd3f30-5193-4d08-8815-243dcbe5d8c7",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "a9a2bd3d3e3c166f28572eb49d334b513ddca5ffff6c29f32687a2b58f08ce95"
+  },
+  "nodeGroups": [],
+  "id": "i31rQ0Syl2hY2yXB",
+  "tags": [
+    {
+      "updatedAt": "2026-10-12T14:57:17.291Z",
+      "createdAt": "2026-10-12T14:57:17.291Z",
+      "id": "C9Arh1s7rafRrTss",
+      "name": "n8n103"
+    }
+  ]
+}
