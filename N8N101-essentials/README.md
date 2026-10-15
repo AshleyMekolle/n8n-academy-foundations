@@ -2,7 +2,7 @@
 
 First course of the n8n Foundations program: the n8n interface, triggers, credentials, and how data moves and transforms through workflows.
 
-**Status:** Completed | Certificate: [view](../certificates/N8N101-certificate.pdf) | Badge: [verify](BADGE_LINK_101)
+**Status:** Completed | Certificate: [view](../certificates/N8N101-certificate.pdf) | Badge: [verify](https://badges.n8n.io/e1b2e425-ee90-45e3-bb6c-2fd7b8bf7776#acc.Q1kjGz6T)
 
 ## Skills covered
 
