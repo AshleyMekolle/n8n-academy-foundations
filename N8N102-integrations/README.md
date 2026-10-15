@@ -2,7 +2,7 @@
 
 Second and most technical course of the n8n Foundations program: connecting n8n to external services, controlling workflow logic, and building complete integrations.
 
-**Status:** Completed | Certificate: [view](../certificates/N8N102-certificate.pdf) | Badge: [verify](BADGE_LINK_102)
+**Status:** Completed | Certificate: [view](../certificates/N8N102-certificate.pdf) | Badge: [verify](https://badges.n8n.io/19174a82-6324-44ae-b102-740ba6887095#acc.d9AgcQ4V)
 
 ## Skills covered
 
