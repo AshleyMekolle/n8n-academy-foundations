@@ -33,7 +33,7 @@ Third course of the n8n Foundations program: AI-powered workflows, debugging, er
 
 **Nodes used:** Manual Trigger, HTTP Request, Limit, Basic LLM Chain (x2), Groq Chat Model (x2), Structured Output Parser, Edit Fields (Set)
 
-![AI Feedback Pipeline](screenshots/Section-1-Feedback-Agent-Executed-workflow.png)
+![AI Feedback Pipeline](screenshots/Section-1-Feedback-Pipeline.png)
 
 **Workflow file:** [01-feedback-pipeline.json](workflows/01-feedback-pipeline.json)
 
@@ -53,7 +53,7 @@ Each parameter is filled at runtime with `$fromAI()`, so the model extracts the 
 
 **Nodes used:** Chat Trigger, AI Agent, Groq Chat Model, HTTP Request Tool (x3)
 
-![Customer Service AI Agent](screenshots/Section-1-Feedback-Pipeline.png)
+![Customer Service AI Agent](screenshots/Section-1-Feedback-Agent-Executed-workflow.png)
 
 **Workflow file:** [02-customer-service-agent.json](workflows/02-customer-service-agent.json)
 
