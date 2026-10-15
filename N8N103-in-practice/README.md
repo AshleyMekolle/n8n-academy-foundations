@@ -2,7 +2,7 @@
 
 Third course of the n8n Foundations program: AI-powered workflows, debugging, error handling, and organizing workflows for production.
 
-**Status:** Completed | Certificate: [view](../certificates/N8N103-certificate.pdf) | Badge: [verify](BADGE_LINK_103)
+**Status:** Completed | Certificate: [view](../certificates/N8N103-certificate.pdf) | Badge: [verify](https://badges.n8n.io/1bd00129-c0ac-498b-969f-d699da1b3f58#acc.ZHvE71eT)
 
 ## Skills covered
 
