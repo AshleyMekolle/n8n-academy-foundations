@@ -8,10 +8,9 @@ All three courses of the official [n8n Academy](https://learn.n8n.io) Foundation
 
 | Course | Certificate | Badge |
 |---|---|---|
-| **N8N101** Essentials: Your First Workflows | [View](certificates/N8N101-certificate.pdf) | [Verify](BADGE_LINK_101) |
-| **N8N102** Integrations: APIs & Connected Workflows | [View](certificates/N8N102-certificate.pdf) | [Verify](BADGE_LINK_102) |
-| **N8N103** In Practice: AI, Testing & Best Practices | [View](certificates/N8N103-certificate.pdf) | [Verify](BADGE_LINK_103) |
-| **n8n Foundations Program** (all three courses) | [View](certificates/foundations-program-certificate.pdf) | [Verify](BADGE_LINK_PROGRAM) |
+| **N8N101** Essentials: Your First Workflows | [View](certificates/N8N101-certificate.pdf) | [Verify](https://badges.n8n.io/e1b2e425-ee90-45e3-bb6c-2fd7b8bf7776#acc.dlxP0Koz) |
+| **N8N102** Integrations: APIs & Connected Workflows | [View](certificates/N8N102-certificate.pdf) | [Verify](https://badges.n8n.io/19174a82-6324-44ae-b102-740ba6887095#acc.uQalkpRc) |
+| **N8N103** In Practice: AI, Testing & Best Practices | [View](certificates/N8N103-certificate.pdf) | [Verify](https://badges.n8n.io/1bd00129-c0ac-498b-969f-d699da1b3f58#acc.4sWJjRUY) |
 
 Certificates can be verified at [learn.n8n.io](https://learn.n8n.io).
 
@@ -67,7 +66,7 @@ The endpoints belong to the n8n Academy practice API, so most workflows need an 
 
 ## Where I apply this
 
-I build workflow automations, API integrations and back-end services for businesses. This includes [Dispatch](https://github.com/AshleyMekolle), a platform that automates business processes from a single prompt, as well as client workflows in n8n, Make and Zapier.
+I build workflow automations, API integrations and back-end services for businesses. This includes [Dispatch](https://github.com/AshleyMekolle/Dispatch-AI), a platform that automates business processes from a single prompt, as well as client workflows in n8n, Make and Zapier.
 
 ## Contact
 
