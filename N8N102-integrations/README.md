@@ -32,7 +32,7 @@ Second and most technical course of the n8n Foundations program: connecting n8n 
 
 **Nodes used:** Manual Trigger, HTTP Request (GET with pagination, POST), Merge, Edit Fields (Set), Aggregate, IF, Filter, Loop Over Items, Switch, No Operation, Sticky Note
 
-![API Integration Pipeline](screenshots/01-api-integration-pipeline.png)
+![API Integration Pipeline](screenshots/Section-1-API-Integration-Pipeline-1.png)
 
 **Workflow file:** [01-api-integration-pipeline.json](workflows/01-api-integration-pipeline.json)
 
@@ -48,7 +48,7 @@ Three workflows that work together as one order intake system.
 
 **Nodes used:** Webhook (header auth), IF, Execute Workflow, Respond to Webhook (200 and 400)
 
-![Order Webhook Processor](screenshots/02-order-webhook-processor.png)
+![Order Webhook Processor](screenshots/Section-2-Order-Webhook-Processor.png)
 
 **Workflow file:** [02-order-webhook-processor.json](workflows/02-order-webhook-processor.json)
 
@@ -66,7 +66,7 @@ Three workflows that work together as one order intake system.
 
 **Nodes used:** Execute Workflow Trigger (defined inputs), Data Table (get, insert, update), IF, HTTP Request, Edit Fields (Set)
 
-![Process Order Sub-Workflow](screenshots/03-process-order-subworkflow.png)
+![Process Order Sub-Workflow](screenshots/Section-2-Process-Order-(Sub-Workflow).png)
 
 **Workflow file:** [03-process-order-subworkflow.json](workflows/03-process-order-subworkflow.json)
 
@@ -76,7 +76,7 @@ Three workflows that work together as one order intake system.
 
 **Nodes used:** Manual Trigger, Data Table (get all), Summarize
 
-![Order Report](screenshots/04-order-report.png)
+![Order Report](screenshots/Section-2-Order-Report.png)
 
 **Workflow file:** [04-order-report.json](workflows/04-order-report.json)
 
